@@ -5,6 +5,7 @@ winget install Discord.Discord.Canary
 
 winget install Microsoft.PowerToys # https://github.com/microsoft/PowerToys
 winget install DevToys-app.DevToys
+winget install Bruno.Bruno
 
 winget install Git.Git
 
