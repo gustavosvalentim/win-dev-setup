@@ -48,6 +48,8 @@ Then go to `Tools > Options > Projects and Solutions` and check `Track Active It
 
 ![alt text](docs/assets/visual-studio-track-active-item-solution-explorer.png)
 
+> [2024-11-26] Recently I had some issues debugging a project on VS 2022. The issue I was facing was that the application was not starting when using the debugger (F5), no breakpoints were being reached and there was no exception (`Output Window` was clean as well). The way I fixed this was by disabling `Debug -> Options -> Just My Code`. After I disabled this setting, I could see there was an exception happening at the start of the process, and it was being thrown by external code, and that was the reason the service was not starting.
+
 ##### CodeMaid
 
 `CodeMaid` removes modifiers like `required` from class properties. To fix this go to `Extensions > CodeMaid > Options > Cleaning > Insert` and uncheck `Insert explicit access modifiers on **properties**`.
